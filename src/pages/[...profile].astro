@@ -1,0 +1,46 @@
+---
+import { defaultLocale, moreLocales } from '@/config'
+import Layout from '@/layouts/Layout.astro'
+
+export function getStaticPaths() {
+  type PathItem = {
+    params: { profile: string }
+    props: { lang: string }
+  }
+  const paths: PathItem[] = []
+
+  // Default locale: /profile/
+  paths.push({
+    params: { profile: 'profile/' },
+    props: { lang: defaultLocale },
+  })
+
+  // Other locales: /<lang>/profile/
+  moreLocales.forEach((lang: string) => {
+    paths.push({
+      params: { profile: `${lang}/profile/` },
+      props: { lang },
+    })
+  })
+
+  return paths
+}
+
+const { lang } = Astro.props
+const content = lang === 'en'
+  ? {
+      title: 'Profile',
+      body: 'This is my personal profile. (Placeholder — full content coming soon.)',
+    }
+  : {
+      title: '个人简介',
+      body: '这是我的个人简介。（占位 — 内容稍后补充。）',
+    }
+---
+
+<Layout postTitle={content.title}>
+  <div class="uno-decorative-line" />
+  <div class="heti">
+    <p>{content.body}</p>
+  </div>
+</Layout>

@@ -22,22 +22,6 @@ lang: zh
 - 日复一日的体悟与感受
 - 偶尔的代码片段、读书摘录、生活随笔
 
-## 写作约定
-
-文章源文件就放在 `src/content/posts/` 下，frontmatter 简单几个字段即可：
-
-```yaml
----
-title: 标题
-published: 2026-05-11
-description: 一句话简介，会出现在列表页和 SEO meta
-tags: [标签一, 标签二]
-lang: zh
----
-```
-
-英文版本放到同名的 `src/content/posts/en/` 下。如果只写中文，省略 `en/` 即可。
-
 ---
 
 那么，开始吧。

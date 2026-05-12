@@ -11,3 +11,4 @@ lang: zh
 ---
 
 如果你想联系我，可以通过 [Email](mailto:shitao_xiao@outlook.com) 找到我。
+这是我的[个人简介](/profile/)。
