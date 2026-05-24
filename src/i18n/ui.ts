@@ -7,6 +7,7 @@ export const ui = {
     tags: 'Schlagwörter',
     about: 'Über',
     toc: 'Inhaltsverzeichnis',
+    daily: 'Tägliche Übersicht',
   },
   'en': {
     title: 'Retypeset',
@@ -16,6 +17,7 @@ export const ui = {
     tags: 'Tags',
     about: 'About',
     toc: 'Table of Contents',
+    daily: 'Daily Brief',
   },
   'es': {
     title: 'Retipografía',
@@ -25,6 +27,7 @@ export const ui = {
     tags: 'Etiquetas',
     about: 'Sobre',
     toc: 'Índice',
+    daily: 'Boletín Diario',
   },
   'fr': {
     title: 'Retypographie',
@@ -34,6 +37,7 @@ export const ui = {
     tags: 'Étiquettes',
     about: 'À propos',
     toc: 'Table des matières',
+    daily: 'Bulletin Quotidien',
   },
   'ja': {
     title: '再組版',
@@ -43,6 +47,7 @@ export const ui = {
     tags: 'タグ',
     about: '概要',
     toc: '目次',
+    daily: 'デイリーブリーフ',
   },
   'ko': {
     title: '재조판',
@@ -52,6 +57,7 @@ export const ui = {
     tags: '태그',
     about: '소개',
     toc: '목차',
+    daily: '데일리 브리프',
   },
   'pl': {
     title: 'Przeskład',
@@ -61,6 +67,7 @@ export const ui = {
     tags: 'Tagi',
     about: 'O stronie',
     toc: 'Spis treści',
+    daily: 'Codzienny Przegląd',
   },
   'pt': {
     title: 'Retipografia',
@@ -70,6 +77,7 @@ export const ui = {
     tags: 'Tags',
     about: 'Sobre',
     toc: 'Sumário',
+    daily: 'Boletim Diário',
   },
   'ru': {
     title: 'Переверстка',
@@ -79,6 +87,7 @@ export const ui = {
     tags: 'Теги',
     about: 'О себе',
     toc: 'Оглавление',
+    daily: 'Ежедневная сводка',
   },
   'zh': {
     title: '重新编排',
@@ -88,6 +97,7 @@ export const ui = {
     tags: '标签',
     about: '关于',
     toc: '目录',
+    daily: '每日简报',
   },
   'zh-tw': {
     title: '重新編排',
@@ -97,5 +107,6 @@ export const ui = {
     tags: '標籤',
     about: '關於',
     toc: '目錄',
+    daily: '每日簡報',
   },
 }

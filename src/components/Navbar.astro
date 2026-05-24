@@ -31,6 +31,12 @@ const navItems = [
     label: currentUI.about,
     className: getNavItemClass(isAboutActive),
   },
+  {
+    href: '/DailyBrief/',
+    label: currentUI.daily,
+    className: getNavItemClass(false),
+    external: true,
+  },
 ]
 ---
 
@@ -46,8 +52,10 @@ const navItems = [
     {navItems.map(item => (
       <li>
         <a
-          href={getLocalizedPath(item.href)}
+          href={item.external ? item.href : getLocalizedPath(item.href)}
           class={item.className}
+          target={item.external ? '_blank' : undefined}
+          rel={item.external ? 'noopener' : undefined}
         >
           {item.label}
         </a>
